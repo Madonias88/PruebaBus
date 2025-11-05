@@ -1,0 +1,265 @@
+<div class="main-content">
+  <div class="info-grid">
+    <div class="info-card">
+      <h2 class="section-title">Reserva en línea para asegurar tu asiento en el próximo viaje.</h2>
+
+      <mat-stepper [linear]="isLinear" #stepper>
+
+        <!-- STEP 1: Destino -->
+        <mat-step [stepControl]="secondFormGroup">
+          <ng-template matStepLabel>Destino</ng-template>
+
+          <div class="payment-section" [formGroup]="secondFormGroup">
+            <mat-form-field class="control-full-width">
+              <mat-label>Origen</mat-label>
+              <input matInput formControlName="fromCtrl" readonly>
+              <mat-error *ngIf="secondFormGroup.get('fromCtrl')?.hasError('required')">
+                Campo requerido
+              </mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="control-full-width">
+              <mat-label>Selecciona la ruta</mat-label>
+              <mat-select formControlName="rutaCtrl" required>
+                <mat-option *ngFor="let ruta of rutas" [value]="ruta.ruta_id">
+                  {{ ruta.nombre }}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="secondFormGroup.get('rutaCtrl')?.hasError('required')">
+                Selecciona una ruta
+              </mat-error>
+            </mat-form-field>
+            <p *ngIf="rutasLoading">Cargando rutas...</p>
+            <p *ngIf="rutasError">{{ rutasError }}</p>
+          </div>
+
+          <div class="step-buttons">
+            <button class="button-azul" (click)="goToNextStep(stepper)">Siguiente</button>
+          </div>
+        </mat-step>
+
+        <!-- STEP 2: Fecha -->
+        <mat-step [stepControl]="thirdFormGroup">
+          <ng-template matStepLabel>Fecha</ng-template>
+
+          <div [formGroup]="thirdFormGroup">
+            <div class="payment-section">
+              <mat-form-field>
+                <mat-label>Fecha</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="date" [min]="minDate" required>
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                <mat-error *ngIf="thirdFormGroup.get('date')?.hasError('required')">
+                  La fecha es requerida
+                </mat-error>
+              </mat-form-field>
+            </div>
+
+            <div class="step-buttons">
+              <button class="button-azul" matStepperPrevious>Regresar</button>
+              <button class="button-azul" (click)="onDateNext(true)">Siguiente</button>
+            </div>
+          </div>
+        </mat-step>
+
+        <!-- STEP 3: Horario -->
+        <mat-step [stepControl]="viajeFormGroup">
+          <ng-template matStepLabel>Horario</ng-template>
+
+          <div [formGroup]="viajeFormGroup" class="payment-section">
+            <mat-form-field class="control-full-width">
+              <mat-label>Selecciona su horario</mat-label>
+              <mat-select formControlName="viaje" required>
+                <mat-option *ngFor="let viaje of availableViajes" [value]="viaje.viaje_id">
+                  Viaje {{ viaje.fecha_salida | date: 'dd/MM/yyyy, h:mm a' }} - Bus {{ getBusPlaca(viaje.bus_id) }}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="viajeFormGroup.get('viaje')?.hasError('required')">
+                Selecciona un horario
+              </mat-error>
+            </mat-form-field>
+            <p *ngIf="isLoading">Cargando viajes...</p>
+            <p *ngIf="viajesError">{{ viajesError }}</p>
+          </div>
+
+          <div class="step-buttons">
+            <button class="button-azul" matStepperPrevious>Regresar</button>
+            <button class="button-azul" (click)="onViajeNext(true)">Siguiente</button>
+          </div>
+        </mat-step>
+
+        <!-- STEP 4: Asientos -->
+        <mat-step>
+          <ng-template matStepLabel>Asientos</ng-template>
+
+          <div class="bus-container">
+            <img src="https://pc.kosokubus.com/include/ib/img/seats_page/img_standard.jpg"
+                 alt="Diagrama de asientos del bus" class="bus-image">
+
+            <ng-container *ngFor="let seat of seats">
+              <div class="seat"
+                   [ngClass]="getSeatClass(seat.status)"
+                   [style.top]="seat.top"
+                   [style.left]="seat.left"
+                   (click)="selectSeat(+seat.number)">
+                {{ seat.number }}
+              </div>
+            </ng-container>
+          </div>
+
+          <div class="seat-legend">
+            <span class="legend available">🟩 Disponible</span>
+            <span class="legend occupied">🟥 Ocupada</span>
+            <span class="legend reserved">🟨 Reservada</span>
+          </div>
+
+          <div class="step-buttons">
+            <button class="button-azul" matStepperPrevious>Regresar</button>
+            <button class="button-azul" [disabled]="selectedSeats.length === 0" (click)="goToNextStep(stepper, true)">
+              Siguiente
+            </button>
+          </div>
+        </mat-step>
+
+        <!-- STEP 5: Datos -->
+        <mat-step [stepControl]="passengerFormGroup">
+          <ng-template matStepLabel>Datos</ng-template>
+
+          <div [formGroup]="passengerFormGroup" class="section-form">
+            <h3>Datos de los Pasajeros</h3>
+
+            <div formArrayName="passengers" class="passenger-grid">
+              <div *ngFor="let form of passengerFormArray.controls; let i = index"
+                   [formGroup]="form" class="passenger-form">
+                <h4>Pasajero Asiento #{{ selectedSeats[i] }}</h4>
+
+                <mat-form-field appearance="fill" class="control-compact">
+                  <mat-label>Nombre</mat-label>
+                  <input matInput formControlName="name" placeholder="Apellido, Nombre" maxlength="50">
+                  <mat-error *ngIf="form.get('name')?.hasError('required')">Este campo es obligatorio</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="control-compact">
+                  <mat-label>DPI o Pasaporte</mat-label>
+                  <input matInput formControlName="id" maxlength="13" placeholder="Ej. 1234567890123">
+                  <mat-error *ngIf="form.get('id')?.hasError('required')">Campo obligatorio</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="control-compact">
+                  <mat-label>Celular</mat-label>
+                  <input matInput formControlName="phone" maxlength="8" placeholder="Ej. 12345678">
+                  <mat-error *ngIf="form.get('phone')?.hasError('required')">Campo obligatorio</mat-error>
+                </mat-form-field>
+                <hr>
+              </div>
+            </div>
+
+            <div class="timer" *ngIf="!paymentConfirmed">
+              Tiempo restante: <strong>{{ countdown }}</strong>
+            </div>
+          </div>
+
+          <div class="step-buttons">
+            <button class="button-azul" matStepperPrevious>Regresar</button>
+            <button class="button-azul" (click)="goToNextStep(stepper, true)">Siguiente</button>
+          </div>
+        </mat-step>
+
+        <!-- STEP 6: Pago -->
+        <mat-step [stepControl]="paymentFormGroup">
+          <ng-template matStepLabel>Pago</ng-template>
+
+          <div [formGroup]="paymentFormGroup">
+            <div class="section-form">
+              <h3>Boletos</h3>
+              <div class="ticket-list">
+                <div class="ticket-wrapper"
+                     *ngFor="let form of passengerFormArray.controls; let i = index"
+                     [formGroup]="form">
+                  <div class="ticket-header"><h4>Boleto #{{ i + 1 }}</h4></div>
+                  <div class="ticket-info">
+                    <p><strong>Asiento:</strong> {{ selectedSeats[i] }}</p>
+                    <p><strong>Nombre:</strong> {{ form.get('name')?.value }}</p>
+                    <p><strong>DPI/Pasaporte:</strong> {{ form.get('id')?.value }}</p>
+                    <p><strong>Celular:</strong> {{ form.get('phone')?.value }}</p>
+                    <p><strong>Origen:</strong> {{ secondFormGroup.get('fromCtrl')?.value }}</p>
+                    <p><strong>Destino:</strong> {{ getSelectedRutaName() }}</p>
+                    <p><strong>Fecha:</strong> {{ thirdFormGroup.get('date')?.value | date:'fullDate':'':'es' }}</p>
+                    <p><strong>Horario:</strong> {{ selectedViaje?.fecha_salida | date:'hh:mm a' }}</p>
+                    <p><strong>Total:</strong> Q125</p>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="payment-section">
+              <h3>Información de Pago</h3>
+              <mat-form-field class="control-full-width">
+                <mat-label>Correo electrónico</mat-label>
+                <input matInput formControlName="email" placeholder="ejemplo@correo.com">
+              </mat-form-field>
+
+              <mat-form-field class="control-compact">
+                <mat-label>Número de tarjeta</mat-label>
+                <input matInput formControlName="cardNumber" maxlength="16" placeholder="1234123412341234">
+              </mat-form-field>
+
+              <div class="row-two">
+                <mat-form-field class="control-compact half">
+                  <mat-label>MM/YY</mat-label>
+                  <input matInput formControlName="expiry" placeholder="MM/YY">
+                </mat-form-field>
+
+                <mat-form-field class="control-compact half">
+                  <mat-label>CVV</mat-label>
+                  <input matInput formControlName="cvv" maxlength="3" placeholder="123">
+                </mat-form-field>
+              </div>
+
+              <div class="payment-actions">
+                <div class="timer" *ngIf="!paymentConfirmed">
+                  Tiempo restante: <strong>{{ countdown }}</strong>
+                </div>
+                <button mat-raised-button color="warn" class="pay-button"
+                        (click)="paySeat()"
+                        [disabled]="paymentConfirmed || !paymentFormGroup.valid">
+                  Pagar Boleto
+                </button>
+              </div>
+
+              <div *ngIf="paymentConfirmed" class="confirmation-message">
+                ✅ Pago confirmado
+              </div>
+            </div>
+          </div>
+
+          <div class="step-buttons">
+            <button class="button-azul" matStepperPrevious>Regresar</button>
+            <button class="button-azul" (click)="goToNextStep(stepper, true)" [disabled]="!paymentConfirmed">
+              Finalizar
+            </button>
+            
+          </div>
+        </mat-step>
+
+        <!-- STEP 7: Final -->
+        <mat-step>
+          <ng-template matStepLabel>Listo</ng-template>
+          <p class="section-title">Tu boleto ha sido reservado.</p>
+          <div class="step-buttons">
+            <button class="button-reserva" (click)="verReserva()">Ver Reserva</button>
+          </div>
+        </mat-step>
+
+      </mat-stepper>
+    </div>
+
+    <div class="bus-animation-container" *ngIf="showBusAnimation">
+      <img src="https://static.vecteezy.com/system/resources/previews/019/167/768/non_2x/city-bus-isolated-on-transparent-background-3d-rendering-illustration-free-png.png"
+           alt="Bus en movimiento"
+           class="bus-animation-img" />
+    </div>
+  </div>
+</div>

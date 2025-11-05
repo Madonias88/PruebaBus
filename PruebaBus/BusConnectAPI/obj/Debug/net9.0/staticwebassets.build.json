@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "qPj3LkvSQhQ+zEMYQohwbmUMSdMGk0Ryd5z4Umqg6C8=",
+  "Source": "BusConnectAPI",
+  "BasePath": "_content/BusConnectAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,16 @@
+  @BusConnectAPI_HostAddress = http://localhost:5036
+
+GET {{BusConnectAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{BusConnectAPI_HostAddress}}/api/rutas
+Accept: application/json
+
+###
+
+GET {{BusConnectAPI_HostAddress}}/api/viajes?rutaId=4&fecha=2023-10-29
+Accept: application/json
+
+###

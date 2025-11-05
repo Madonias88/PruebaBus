@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BusConnectAPI.props" />
+</Project>

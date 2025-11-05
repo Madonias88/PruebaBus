@@ -1,0 +1,54 @@
+<div class="container print-area" *ngIf="data.pasajeros?.length > 0; else noReserva">
+  <mat-card class="resumen-card" *ngFor="let pasajero of data.pasajeros">
+   
+    <div class ="resumen-header" >
+      <h2>Reserva Confirmada</h2>
+      <button
+class="button-boleto"
+(click)="regresar()"
+>
+<mat-icon>arrow_back</mat-icon>
+</button>
+</div>
+    <div class="ticket-body">
+      <p><strong>Nombre:</strong> {{ pasajero.nombre }}</p>
+      <p><strong>DPI/Pasaporte:</strong> {{ pasajero.dpi }}</p>
+      <p><strong>Teléfono:</strong> {{ pasajero.telefono }}</p>
+      <p><strong>Origen:</strong> {{ pasajero.from }}</p>
+      <p><strong>Destino:</strong> {{ pasajero.to }}</p>
+      <p><strong>Fecha:</strong> {{ pasajero.fecha | date:'fullDate' }}</p>
+      <p><strong>Asiento:</strong> {{ pasajero.asiento }}</p>
+      <p><strong>Total:</strong> Q125.00</p>
+    </div>
+    <div class="ticket-divider"></div>
+
+    <div class="ticket-footer">
+      <span class="label">Q125</span>
+      <span class="label">Bus Connect</span>
+    </div>
+    <div class="ticket-final">
+      <mat-icon class="icon-final">directions_bus</mat-icon>
+           <p>Gracias por su preferencia</p>
+    </div>
+  </mat-card>
+</div>
+
+<ng-template #noReserva>
+  <div class="container">
+    <mat-card class="resumen-card">
+      <div class ="resumen-header" >
+        <h2>Sin reservas</h2>
+        <button
+  class="button-boleto"
+  (click)="regresar()"
+  >
+  <mat-icon>arrow_back</mat-icon>
+  </button>
+  </div>
+      <div class="ticket-body">
+        <p>No se encontraron boletos para mostrar.</p>
+      </div>
+    </mat-card>
+  </div>
+</ng-template>
+

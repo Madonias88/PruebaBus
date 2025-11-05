@@ -1,0 +1,84 @@
+<div class="container print-area" *ngIf="pasajeros!.length > 0; else noReserva">
+  <!-- Contenedor para exportar -->
+  <div id="ticket-reserva">
+    <mat-card class="ticket-reserva resumen-card" *ngFor="let pasajero of pasajeros">
+      <div class="resumen-header">
+        <h2>Reserva Confirmada</h2>
+      </div>
+
+      <div class="ticket-body">
+        <p><strong>Nombre:</strong> {{ pasajero.nombre }}</p>
+        <p><strong>DPI/Pasaporte:</strong> {{ pasajero.dpi }}</p>
+        <p><strong>Teléfono:</strong> {{ pasajero.telefono }}</p>
+        <p><strong>Origen:</strong> {{ pasajero.from }}</p>
+        <p><strong>Destino:</strong> {{ pasajero.to }}</p>
+        <p><strong>Fecha:</strong> {{ pasajero.fecha | date:'fullDate' }}</p>
+        <p><strong>Horario:</strong> {{ pasajero.horario | date:'hh:mm a' }}</p>
+        <p><strong>Asiento:</strong> {{ pasajero.asiento }}</p>
+        <p><strong>Total:</strong> Q125.00</p>
+      </div>
+
+      <div class="ticket-divider"></div>
+
+      <div class="ticket-footer">
+        <span class="label">Q125</span>
+        <span class="label">Bus Connect</span>
+      </div>
+      <div class="ticket-final">
+        <mat-icon class="icon-final">directions_bus</mat-icon>
+        <p>Gracias por su preferencia</p>
+      </div>
+    </mat-card>
+  </div>
+
+  <div class="acciones-ticket" *ngIf="pasajeros!.length > 0">
+    <button class ="button-boleto"(click)="descargarPDF()">
+      <mat-icon>picture_as_pdf</mat-icon> Descargar PDF
+    </button>
+    <button class ="button-boleto"(click)="reenviarCorreo()">
+      <mat-icon>email</mat-icon> Enviar boletos por correo</button>
+    <button class ="button-boleto"(click)="regresar()">
+      <mat-icon>arrow_back</mat-icon> Regresar
+    </button>
+  </div>
+</div>
+
+<ng-template #noReserva>
+  <div class="container">
+    <mat-card class="resumen-card">
+      <div class="resumen-header">
+        <h2>Sin reservas</h2>
+        <button class ="button-boleto"(click)="regresar()">
+          <mat-icon>arrow_back</mat-icon> 
+        </button>
+      </div>
+      <div class="ticket-body">
+        <p>No se encontraron boletos para mostrar.</p>
+      </div>
+    </mat-card>
+  </div>
+</ng-template>
+
+<div class="modal-fondo" *ngIf="mostrarModal">
+  <div class="modal-correo" [ngClass]="tipoModal">
+    <img 
+      *ngIf="tipoModal === 'success'" 
+      src="https://cdn-icons-gif.flaticon.com/14674/14674091.gif" 
+      alt="Correo enviado" width="90">
+    <img 
+      *ngIf="tipoModal === 'error'" 
+      src="https://cdn-icons-gif.flaticon.com/14674/14674103.gif" 
+      alt="Error correo" width="90">
+    <img 
+      *ngIf="tipoModal === 'info'" 
+      src="https://cdn-icons-gif.flaticon.com/11919/11919478.gif" 
+      alt="Correo enviando" width="90">
+
+   <!-- Solo muestra el título si no es genérico -->
+<h2 *ngIf="tituloModal && tituloModal !== 'success' && tituloModal !== 'error' && tituloModal !== 'info'">
+  {{ tituloModal }}
+</h2>
+    <p>{{ mensajeModal }}</p>
+    <button class="button-boleto" (click)="cerrarModal()">Aceptar</button>
+  </div>
+</div>

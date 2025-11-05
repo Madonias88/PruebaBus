@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+html { 
+    height: 100%;
+    background-color: #d3d3d3;
+    }
+    
+      /* Reseteo básico */
+      body {
+        margin: 0;
+        padding-top: 100px; /* Altura aproximada del header */
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+      
+      
+      /* Títulos */
+      h1, h2, h3 {
+        color: var(--primary-color);
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+      .section-title {
+        font-size: 1.8rem;
+        color: var(--primary-color);
+        text-align: center;
+        margin: 2rem 0 1rem 0;
+      }
+      
+      /* ===== Utilidades globales ===== */
+      .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      
+      
+      /* Iconos */
+      .icono, mat-icon {
+        color: var(--primary-color);
+        vertical-align: middle;
+      }
+    
+      /* ===== Responsividad global ===== */
+    @media (max-width: 768px) {
+      body {
+        font-size: 0.95rem;
+      }
+      .section-title {
+        font-size: 1.4rem;
+      }
+    }
+    
+    /* ===== Ajustes globales responsivos ===== */
+    @media (max-width: 768px) {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    
+      .container {
+        width: 95%;
+      }
+    
+      .menu-header,
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 0.5rem;
+      }
+    }
+    
+    

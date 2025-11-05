@@ -1,0 +1,131 @@
+
+/* Contenedor para centrar vertical y horizontal */
+.container {
+  margin-top: 110px; /* para separar del menú */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background: #e9f0f7;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+/* Contenedor de título + botón */
+.resumen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #25476a;
+  color: white;
+  padding: 10px 16px;
+}
+
+.resumen-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* Estilo para la tarjeta tipo boleto */
+.resumen-card {
+  width: 360px; 
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d0dce8;
+  transition: transform 0.2s ease-in-out;
+}
+
+.resumen-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Estilo para el título */
+.resumen-card h2 {
+  background: #25476a;
+  color: white;
+  padding: 16px;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
+.ticket-body {
+  padding: 20px;
+}
+
+.ticket-body p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #c0d6f9;
+  padding-bottom: 6px;
+}
+
+.ticket-body p strong {
+  color: #1b3a57;
+  min-width: 130px;
+  font-weight: 600;
+}
+
+/* Línea perforada como separación */
+.ticket-divider {
+  width: 100%;
+  border-top: 2px dashed #ccc;
+  margin: 10px 0;
+}
+
+/* Estilo para sección final */
+.ticket-footer {
+  padding: 10px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.label {
+  background-color: #25476a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.print-button-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ticket-final {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #888;
+  gap: 8px;
+}
+
+.icon-final {
+  font-size: 20px;
+  color: #3f51b5; /* color azul Material */
+}
+
+.button-boleto {
+  background-color: #1b3a57;
+  color: #ffffff;
+}

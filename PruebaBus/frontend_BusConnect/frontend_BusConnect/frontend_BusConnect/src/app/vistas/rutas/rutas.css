@@ -1,0 +1,95 @@
+.main-content {
+  padding: 20px;
+}
+.section-title{
+  text-align: center;
+  color: #0d47a1
+}
+
+.info-grid {
+  display: flex;
+  flex-direction: row; /* acomoda los elementos en fila horizontal */
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+  flex-wrap: wrap; /* evita que se bajen a otra línea */
+  overflow: visible; /* evita scroll vertical si se salen */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.info-grid.fade-out {
+  opacity: 0;
+}
+
+.info-card {
+  background-color: #f5f5f5;
+  padding: 20px; /*Espacio interno */
+  flex: 0 0 auto; /* Fija el ancho de cada tarjeta */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  width: 310px;
+}
+.info-card h3 {
+  margin-top: 0;
+  color: #03275e;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+mat-card.carousel-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* Contenedor de las tarjetas y botones */
+.Carousel-controls{
+display:flex;/* organiza en fila flexible*/
+flex-direction: row; /*acomoda de izquierda a derecha*/
+align-items: center; /*alinea los elementos verticalmente centrado*/
+justify-content: center;
+gap: 10px;/*espacio entre los elementos*/
+}
+
+.carousel-button {
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+}
+.control-compact {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.info-card button.button-boleto {
+  margin-top: 10px;
+  background-color:  #03275e;
+  color:#ffffff; 
+  text-align: center;
+}
+.info-card button.button-boleto:hover {
+  background-color: #0d47a1;
+}
+
+@media (max-width: 768px) {
+  .info-card {
+    width: 90%;                 /* se adapta al móvil */
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,25 @@
+<header class="menu-header">
+  <div class="menu-container">
+    <h1 class="menu-title">
+      BusConnect
+    </h1>
+  </div>
+
+  <nav class="menu-nav">
+    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+      <mat-icon class = "icono">home</mat-icon> Inicio
+    </a>
+    <a routerLink="rutas" routerLinkActive="active">
+      <mat-icon class = "icono"> place</mat-icon> Rutas
+    </a>
+    <a routerLink="boletos" routerLinkActive="active">
+      <mat-icon  class ="icono">confirmation_number</mat-icon> Boletos
+    </a>
+
+  </nav>
+</header>
+
+<!-- Aquí se muestran los componentes hijos -->
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

@@ -1,0 +1,236 @@
+/* Contenedor para centrar vertical y horizontal */
+.container {
+  margin-top: 50px; /* para separar del menú */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  background: #e9f0f7;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Estilo para la tarjeta tipo boleto */
+.resumen-card {
+  width: 360px; 
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d0dce8;
+  transition: transform 0.2s ease-in-out;
+}
+
+.resumen-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Estilo para el título */
+.resumen-card h2 {
+  background: #25476a;
+  color: white;
+  padding: 16px;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
+.ticket-body {
+  padding: 20px;
+}
+
+.ticket-body p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #c0d6f9;
+  padding-bottom: 6px;
+}
+
+.ticket-body p strong {
+  color: #1b3a57;
+  min-width: 130px;
+  font-weight: 600;
+}
+
+/* Línea perforada como separación */
+.ticket-divider {
+  width: 100%;
+  border-top: 2px dashed #ccc;
+  margin: 10px 0;
+}
+
+/* Estilo para sección final */
+.ticket-footer {
+  padding: 10px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.label {
+  background-color: #25476a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.print-button-container {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ticket-final {
+  display: flex;
+  align-items: center;
+ justify-content: center;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #888;
+  gap: 8px;
+}
+
+.icon-final {
+  font-size: 20px;
+  color: #3f51b5; /* color azul Material */
+}
+
+/* estilo ticket*/
+
+.print-area {
+  width: 100%;
+  margin: 20px auto;
+  flex-direction: column;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px; /* espacio entre tarjetas */
+  background-color: #e9f0f7;;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+#ticket-reserva {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* espacio entre tickets */
+  padding: 40px; /* Solo tickets */
+}
+
+/* Encabezado del ticket */
+.resumen-header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background: #25476a; 
+  color: white; 
+  padding: 10px 16px; 
+}
+
+.resumen-header h2 {
+  margin: 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Botón de retroceso */
+.button-boleto {
+  margin-top: 15px;
+  background-color: #1b3a57;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.acciones-ticket {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+
+@media print {
+  .page-break {
+    page-break-inside: avoid !important;
+    page-break-after: always !important;
+  }
+}
+
+.modal-fondo {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-correo {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 35px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  animation: pop 0.3s ease;
+}
+
+.modal-correo h2 {
+  margin: 10px 0 5px;
+  font-size: 1.5em;
+}
+
+.modal-correo p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.modal-correo.success { border-top: 5px solid #2ecc71; }
+.modal-correo.error { border-top: 5px solid #e74c3c; }
+.modal-correo.info { border-top: 5px solid #3498db; }
+
+.button-boleto {
+  background-color: #1a437c;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button-boleto:hover {
+  background-color: #163867;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

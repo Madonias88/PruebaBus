@@ -1,0 +1,21 @@
+@BusConnectAPI_HostAddress = http://localhost:5036
+
+POST {{BusConnectAPI_HostAddress}}/api/reservas
+Content-Type: application/json
+
+{
+  "request": {
+    "email": "test@example.com",
+    "to": "Guatemala",
+    "bus": "BUS001",
+    "fecha": "2023-10-29T00:00:00",
+    "passengers": [
+      {
+        "nombre": "Juan Perez",
+        "dpi": "123456789",
+        "telefono": "555-1234",
+        "asiento": 1
+      }
+    ]
+  }
+}
