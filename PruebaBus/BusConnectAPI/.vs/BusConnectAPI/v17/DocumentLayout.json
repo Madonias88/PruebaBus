@@ -1,42 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\models\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\models\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:models\\pagos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\controllers\\viajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\services\\oracleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:services\\oracleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\render.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:render.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\controllers\\viajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:controllers\\viajescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\busconnectapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\pruebabusconnect\\pruebabus\\busconnectapi\\busconnectapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:busconnectapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\services\\oracleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:services\\oracleservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,66 +50,120 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Email.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Models\\Email.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Models\\Email.cs",
               "RelativeDocumentMoniker": "Models\\Email.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Models\\Email.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Models\\Email.cs",
               "RelativeToolTip": "Models\\Email.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T06:06:29.474Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "render.yaml",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\render.yaml",
+              "RelativeDocumentMoniker": "render.yaml",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\render.yaml",
+              "RelativeToolTip": "render.yaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-11-05T22:38:21.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T22:48:08.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-05T04:57:43.626Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Controllers\\EmailController.cs",
               "RelativeToolTip": "Controllers\\EmailController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T05:51:07.378Z"
+              "WhenOpened": "2025-10-31T05:51:07.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Pagos.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Models\\Pagos.cs",
+              "RelativeDocumentMoniker": "Models\\Pagos.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Models\\Pagos.cs",
+              "RelativeToolTip": "Models\\Pagos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T05:52:15.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OracleServices.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Services\\OracleServices.cs",
+              "RelativeDocumentMoniker": "Services\\OracleServices.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Services\\OracleServices.cs",
+              "RelativeToolTip": "Services\\OracleServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T22:49:26.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ReservasController.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\ReservasController.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Controllers\\ReservasController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReservasController.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\ReservasController.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Controllers\\ReservasController.cs",
               "RelativeToolTip": "Controllers\\ReservasController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAgwAYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T04:55:19.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ViajesController.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\ViajesController.cs",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Controllers\\ViajesController.cs",
               "RelativeDocumentMoniker": "Controllers\\ViajesController.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\ViajesController.cs",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\Controllers\\ViajesController.cs",
               "RelativeToolTip": "Controllers\\ViajesController.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -113,51 +171,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Pagos.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Models\\Pagos.cs",
-              "RelativeDocumentMoniker": "Models\\Pagos.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Models\\Pagos.cs",
-              "RelativeToolTip": "Models\\Pagos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-25T05:52:15.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T22:48:08.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "BusConnectAPI.http",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\BusConnectAPI.http",
+              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.http",
               "RelativeDocumentMoniker": "BusConnectAPI.http",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\BusConnectAPI.http",
+              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.http",
               "RelativeToolTip": "BusConnectAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
               "WhenOpened": "2025-10-30T03:27:26.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OracleServices.cs",
-              "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Services\\OracleServices.cs",
-              "RelativeDocumentMoniker": "Services\\OracleServices.cs",
-              "ToolTip": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Services\\OracleServices.cs",
-              "RelativeToolTip": "Services\\OracleServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T22:49:26.55Z"
             }
           ]
         }

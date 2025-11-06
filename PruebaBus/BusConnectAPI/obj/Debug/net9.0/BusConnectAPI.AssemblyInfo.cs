@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BusConnectAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+14e69996ba90e4d352a8d207d4a71e2eb89cd9a4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d1792265850f8bc428d81a6391e32b3d14ddbcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("BusConnectAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BusConnectAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

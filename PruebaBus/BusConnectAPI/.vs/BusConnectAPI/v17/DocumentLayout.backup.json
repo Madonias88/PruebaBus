@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:controllers\\reservascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0174653C-8989-9CB2-D081-F7691AE13417}|BusConnectAPI.csproj|c:\\users\\mario\\desktop\\final\\busconnectapi\\models\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -59,12 +59,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T06:06:29.474Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -76,12 +75,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmailController.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\EmailController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmailController.cs",
@@ -89,12 +84,11 @@
               "RelativeToolTip": "Controllers\\EmailController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAowCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-31T05:51:07.378Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-31T05:51:07.378Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ReservasController.cs",
               "DocumentMoniker": "C:\\Users\\Mario\\Desktop\\final\\BusConnectAPI\\Controllers\\ReservasController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReservasController.cs",
