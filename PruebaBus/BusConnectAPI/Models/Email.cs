@@ -1,4 +1,4 @@
-﻿namespace BusConnectAPI.Models
+namespace BusConnectAPI.Models
 {
     public class Email
     {

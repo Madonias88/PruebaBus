@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zGKaJOSTVKY=",
+  "dgSpecHash": "5hAQklY6reg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.csproj",
+  "projectFilePath": "C:\\Users\\Mario\\Videos\\BUSCONN\\BusConnectAPI\\BusConnectAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mario\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\Mario\\.nuget\\packages\\itextsharp.lgplv2.core\\3.7.7\\itextsharp.lgplv2.core.3.7.7.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.csproj": {}
+    "C:\\Users\\Mario\\Videos\\BUSCONN\\BusConnectAPI\\BusConnectAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.csproj": {
+    "C:\\Users\\Mario\\Videos\\BUSCONN\\BusConnectAPI\\BusConnectAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Mario\\Videos\\BUSCONN\\BusConnectAPI\\BusConnectAPI.csproj",
         "projectName": "BusConnectAPI",
-        "projectPath": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\BusConnectAPI.csproj",
+        "projectPath": "C:\\Users\\Mario\\Videos\\BUSCONN\\BusConnectAPI\\BusConnectAPI.csproj",
         "packagesPath": "C:\\Users\\Mario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mario\\Desktop\\final\\PruebaBusConnect\\PruebaBus\\BusConnectAPI\\obj\\",
+        "outputPath": "C:\\Users\\Mario\\Videos\\BUSCONN\\BusConnectAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,6 +58,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.14.0, )"
             },
             "Oracle.ManagedDataAccess.Core": {
               "target": "Package",

@@ -10,6 +10,7 @@
         "dependencies": {
           "MailKit": "4.14.1",
           "Microsoft.AspNetCore.OpenApi": "9.0.6",
+          "MimeKit": "4.14.0",
           "Oracle.ManagedDataAccess.Core": "23.9.1",
           "QRCoder": "1.7.0",
           "iTextSharp.LGPLv2.Core": "3.7.7"
